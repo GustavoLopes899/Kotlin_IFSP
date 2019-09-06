@@ -9,6 +9,9 @@ fun main (args: Array<String>) {
     // Imprimir variável
     println(frase)
 
+    // Reatribiur valor da variable
+    frase = "Hello Gustavo!"
+
     // Imprimir com String Template
     println("${frase}")
 
