@@ -20,4 +20,10 @@ fun main (args: Array<String>) {
 
     // Imprimir com propriedade (get)
     println("Quantidade de caracteres: ${frase.length}")
+
+    // Imutável - Variables val
+    val frase_constante: String = "Frase constante"
+
+    // Imprimir variável
+    println(frase_constante)
 }
