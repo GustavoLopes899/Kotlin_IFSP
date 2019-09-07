@@ -35,4 +35,14 @@ fun main(args: Array<String>) {
     // forEach - lambda
     println("Lista usando forEach")
     listaInteiros_IntRangeStep.forEach{ x: Int -> println(x) }
+
+    var aLista: ArrayList<String> = ArrayList()
+
+    // Lista mutável
+    val listaCursos: MutableList<String> = mutableListOf("Análise e Desenvolvimento de Sistemas",
+            "Sistema para Dispositivos Móveis")
+
+    listaCursos.add("Técnico em Informática para Internet")
+
+    listaCursos.forEach { println(it) }         // Argumento padrão do forEach -> it
 }
