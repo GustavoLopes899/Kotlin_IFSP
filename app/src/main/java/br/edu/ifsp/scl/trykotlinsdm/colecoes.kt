@@ -43,6 +43,17 @@ fun main(args: Array<String>) {
             "Sistema para Dispositivos Móveis")
 
     listaCursos.add("Técnico em Informática para Internet")
-
     listaCursos.forEach { println(it) }         // Argumento padrão do forEach -> it
+
+    // Set e MutableSet
+    val setCursos: MutableSet<String> = mutableSetOf("ADS", "SDM", "TII")
+    setCursos.add("ADS")
+    setCursos.add("SDM")
+    setCursos.forEach {println(it) }
+
+    // Map e MutableMap
+    val familiaMap: MutableMap<String, String> = mutableMapOf(Pair("Eu", "Gustavo"), Pair("Irmão", "Guilherme"))
+    familiaMap.put("Mãe", "Martina")
+    familiaMap.put("Pet", "Lola")
+    familiaMap.forEach {println(it) }
 }
