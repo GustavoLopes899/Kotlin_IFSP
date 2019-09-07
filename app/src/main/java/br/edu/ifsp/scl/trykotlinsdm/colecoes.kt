@@ -28,7 +28,11 @@ fun main(args: Array<String>) {
     val listaInteiros_IntRangeStep: List<Int> = (1..10 step 2).toList()     // Salta de dois em dois
 
     println("Lista com IntRange")
-    for (i in listaInteiros_IntRangeStep) {
+    for (i in 0..listaInteiros_IntRangeStep.size - 1) {
         println(i)
     }
+
+    // forEach - lambda
+    println("Lista usando forEach")
+    listaInteiros_IntRangeStep.forEach{ x: Int -> println(x) }
 }
